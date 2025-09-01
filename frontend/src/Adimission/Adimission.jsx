@@ -1,8 +1,11 @@
 import { useForm } from "react-hook-form"
 import { useState } from "react"
 import axios from "axios"
+import { useAuth0 } from "@auth0/auth0-react"
 
 export default function Adimission() {
+   const { isAuthenticated } = useAuth0()
+
   const {
     register,
     handleSubmit,
@@ -24,12 +27,16 @@ export default function Adimission() {
       dateOfBearth: data.dateOfBearth,
       className: data.class
     }
-
+    console.log(isAuthenticated)
+     
+    if (isAuthenticated==true) {
     const res = await axios.post(`${url}/api/ragistration`, { info })
     setCode(res.data)
     setTimeout(() => {
       setShow(false)
-    }, 1000);
+    }, 1000);} else {
+      alert("please singin")
+    }
   }
 
   return (

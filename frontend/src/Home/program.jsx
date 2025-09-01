@@ -6,7 +6,9 @@ const Program = () => {
 
   const [ref1, inView1] = useInView(0.5);
   const [ref2, inView2] = useInView(0.5);
+  const [ref5, inView5] = useInView(0.7);
   const [ref3, inView3] = useInView(0.5);
+  const [ref4, inView4] = useInView(0.7);
 
   return (
 
@@ -37,16 +39,16 @@ const Program = () => {
         <div ref={ref2} >
           <p className='md:text-[1.2rem] font-semibold'>Friende Environment With Children</p>
           <div className='md:flex my-10 justify-evenly'>
-            <img src="photos/play.avif" className={`h-[25rem] md:w-[45%] rounded-3xl opacity-0 ${inView2 ? "card1 opacity-100" : ""}`}></img>
-            <img src="photos/class.avif" className={`h-[25rem] md:w-[45%] mt-6 sm:mt-0 rounded-3xl opacity-0 ${inView2 ? "card4 opacity-100" : ""}`}></img>
+            <img src="photos/play.avif" className={`h-[25rem] md:w-[45%] rounded-3xl opacity-0 ${inView2 ? "card3 opacity-100" : ""}`}></img>
+            <img src="photos/class.avif" ref={ref5} className={`h-[25rem] md:w-[45%] mt-6 sm:mt-0 rounded-3xl opacity-0 ${inView5 ? "card3 opacity-100" : ""}`}></img>
           </div>
         </div>
 
         <div ref={ref3} >
           <p className='md:text-[1.2rem] font-semibold'>Neat & Clean Classroom and Library</p>
           <div className='md:flex my-10 justify-evenly'>
-            <img src="photos/classroom.avif" className={`h-[25rem] md:w-[45%] rounded-3xl opacity-0 ${inView3 ? "card1 opacity-100" : ""}`}></img>
-            <img src="photos/librery.avif" className={`h-[25rem] md:w-[45%]  mt-6 sm:mt-0 rounded-3xl opacity-0 ${inView3 ? "card4 opacity-100" : ""}`}></img>
+            <img src="photos/classroom.avif" className={`h-[25rem] md:w-[45%] rounded-3xl opacity-0 ${inView3 ? "card3 opacity-100" : ""}`}></img>
+            <img src="photos/librery.avif" ref={ref4} className={`h-[25rem] md:w-[45%]  mt-6 sm:mt-0 rounded-3xl opacity-0 ${inView4 ? "card3 opacity-100" : ""}`}></img>
           </div>
         </div>
 

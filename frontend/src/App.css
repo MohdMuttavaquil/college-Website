@@ -1,18 +1,18 @@
 .card1 {
-    animation: slideLeft 0.5s ease-out forwards; 
+    animation: slideLeft 0.8s ease-out forwards; 
 }
 
 .card2 {
-    animation: slideUp 0.5s ease-out forwards; 
+    animation: slideUp 0.8s ease-out forwards; 
 }
 
 .card3 {
-   animation: slideDown 0.5s ease-out forwards; 
+   animation: slideDown 0.8s ease-out forwards; 
 }
 
 
 .card4 {
-  animation: slideRight 0.5s ease-out forwards; 
+  animation: slideRight 0.8s ease-out forwards; 
 } 
 
 @keyframes slideLeft {

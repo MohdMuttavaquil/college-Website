@@ -1,8 +1,11 @@
 import React from 'react'
 import { useForm } from "react-hook-form"
 import axios from 'axios'
+import { useAuth0 } from '@auth0/auth0-react'
 
 const Payment = () => {
+
+     const { isAuthenticated } = useAuth0()
 
     const {
         register,
@@ -11,9 +14,9 @@ const Payment = () => {
         formState: { errors, isSubmitting },
     } = useForm()
 
-   // const url = "http://localhost:3000"
+    //const url = "http://localhost:3000"
 
-   const url = "https://college-website-beckend.onrender.com"
+    const url = "https://college-website-beckend.onrender.com"
 
     const onSubmit = async (data) => {
 
@@ -25,7 +28,11 @@ const Payment = () => {
         }
 
         const res = await axios.post(`${url}/api/onlinepay`, { info })
-        onlinepay(res.data)
+        
+        if(isAuthenticated===true){ 
+        onlinepay(res.data)}else{
+        alert("please singin")
+    }
     }
 
     const onlinepay = async (order) => {
@@ -65,6 +72,7 @@ const Payment = () => {
         rzp.open();
 
     }
+
 
     return (
         <div className='sm:w-[80%] w-[95%] mx-auto min-h-screen'>
