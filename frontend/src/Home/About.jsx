@@ -83,7 +83,7 @@ const About = () => {
             {/* Message to socity */}
             <div ref={ref3} className={`${inView3 ? "fadeIn opacity-100" : ""} opacity-0 w-full py-3 pl-2 sm:w-[80%] my-10 bg-[#812972] flex mx-auto items-center md:gap-8 text-white`} >
 
-                <img src="photos/logo.jpg" className='md:h-44 h-24 w-[60%] hidden md:flex rounded-lg px-2'></img>
+                <img src="photos/logo.png" className='md:h-52 h-24 w-[60%] hidden md:flex px-2'></img>
 
                 <div className='flex-col'>
 
