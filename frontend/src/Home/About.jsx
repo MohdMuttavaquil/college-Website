@@ -14,11 +14,12 @@ const About = () => {
             {/* About College */}
             <div ref={ref1} className="about flex flex-col py-12 gap-6">
 
-                <div className={`font-[600] md:text-[1.5rem] my-2 opacity-0 ${inView1 ? "typing opacity-100" : ""} `}>Durga Modren Inter College</div>
-
                 <div className='college-photo flex gap-10'>
 
                     <div className={`text-[1rem] sm:mt-4 opacity-0 mt-2 ${inView1 ? "fadeIn opacity-100" : ""} `}>
+
+                        <div className={`font-[600] md:text-[1.5rem] mb-4 sm:mb-10 opacity-0 ${inView1 ? "typing opacity-100" : ""} `}>Durga Modren Inter College</div>
+
                         DMIC At we offer a well-rounded CBSE education from LKG to 12th, with dedicated streams
                         in Science, Commerce, and Arts. Our campus features smart classrooms, fully-equipped science
                         and computer labs, commerce and art studios, a library, and large playgrounds for sports
@@ -52,25 +53,25 @@ const About = () => {
 
                 <div ref={ref4} className="topper flex justify-evenly flex-wrap">
 
-                    <div className={`${inView4 ? "card1 opacity-100" : ""} opacity-0 flex-col w-[45%] sm:w-[23%] bg-gray-200 sm:pb-4 text-center rounded`}>
+                    <div className={`${inView4 ? "card1 opacity-100" : ""} opacity-0 flex-col w-[45%] sm:w-[23%] bg-gray-200 sm:pb-4 text-center rounded-xl`}>
                         <img className='md:h-[18rem] h-[10rem] w-full rounded-lg' src='./photos/rihan.jpg'></img>
                         <div className='bg-[#812972] text-center text-white text-xl'>10th Topper<br></br> 95.4%</div>
                         <p className='pt-3.5 text-[1rem] hidden sm:flex'>Lorem ipsum dolor sit amet consectetur adipisicing elit somthing extra. </p>
                     </div>
 
-                    <div className={`${inView4 ? "card2 opacity-100" : ""} opacity-0 flex-col w-[45%] sm:w-[23%] bg-gray-200 sm:pb-4 text-center rounded`}>
+                    <div className={`${inView4 ? "card2 opacity-100" : ""} opacity-0 flex-col w-[45%] sm:w-[23%] bg-gray-200 sm:pb-4 text-center rounded-xl`}>
                         <img className='md:h-[18rem] h-[10rem] w-full rounded-lg' src='./photos/afseen.jpg'></img>
                         <div className='bg-[#812972] text-center text-white text-xl'>10th Topper <br></br> 95.4%</div>
                         <p className='pt-3.5 text-[1rem] hidden sm:flex'>Lorem ipsum dolor sit amet consectetur adipisicing elit somthing extra. </p>
                     </div>
 
-                    <div className={`${inView4 ? "card3 opacity-100" : ""} opacity-0 flex-col w-[45%] sm:w-[23%] bg-gray-200 sm:pb-4 text-center rounded sm:mt-0 mt-6`}>
+                    <div className={`${inView4 ? "card3 opacity-100" : ""} opacity-0 flex-col w-[45%] sm:w-[23%] bg-gray-200 sm:pb-4 text-center rounded-xl sm:mt-0 mt-6`}>
                         <img className="md:h-[18rem] h-[10rem] w-full rounded-lg" src='./photos/arman.jpg'></img>
                         <div className='bg-[#812972] text-center text-white text-xl'>10th Topper <br></br> 95.4%</div>
                         <p className='pt-3.5 text-[1rem] hidden sm:flex'>Lorem ipsum dolor sit amet consectetur adipisicing elit somthing extra.</p>
                     </div>
 
-                    <div className={`${inView4 ? "card4 opacity-100" : ""} opacity-0 flex-col w-[45%] sm:w-[23%] bg-gray-200 sm:pb-4 text-center rounded sm:mt-0 mt-6`}>
+                    <div className={`${inView4 ? "card4 opacity-100" : ""} opacity-0 flex-col w-[45%] sm:w-[23%] bg-gray-200 sm:pb-4 text-center rounded-xl sm:mt-0 mt-6`}>
                         <img className="md:h-[18rem] h-[10rem] w-full rounded-lg" src='./photos/sachin.jpg'></img>
                         <div className='bg-[#812972] text-center text-white text-xl'>10th Topper <br></br> 95.4%</div>
                         <p className='pt-3.5 text-[1rem] hidden sm:flex'>Lorem ipsum dolor sit amet consectetur adipisicing elit somthing extra.</p>
@@ -81,7 +82,7 @@ const About = () => {
             </div>
 
             {/* Message to socity */}
-            <div ref={ref3} className={`${inView3 ? "fadeIn opacity-100" : ""} opacity-0 w-full py-3 pl-2 sm:w-[80%] my-10 bg-[#812972] flex mx-auto items-center md:gap-8 text-white`} >
+            <div ref={ref3} className={`${inView3 ? "fadeIn opacity-100" : ""} opacity-0 w-full py-3 pl-2 sm:w-[80%] my-10 bg-[#812972] flex mx-auto items-center md:gap-8 text-white rounded-2xl`} >
 
                 <img src="photos/logo.png" className='md:h-52 h-24 w-[60%] hidden md:flex px-2'></img>
 
