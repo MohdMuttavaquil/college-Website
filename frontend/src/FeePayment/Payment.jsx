@@ -28,6 +28,7 @@ const Payment = () => {
         }
 
         const res = await axios.post(`${url}/api/onlinepay`, { info })
+        onlinepay(res.data)
         
         if(isAuthenticated===true){ 
         onlinepay(res.data)}else{
