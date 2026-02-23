@@ -21,7 +21,7 @@ The platform also includes **Google Sign-In authentication** powered by **Auth0*
 
 | Layer | Technologies |
 |-------|---------------|
-| **Frontend** | React.js, Tailwind CSS, 
+| **Frontend** | React.js, Tailwind CSS
 | **Backend** | Node.js, Express.js, REST APIs |
 | **Database** | MongoDB, Mongoose |
 | **Authentication** | Auth0 (Google Sign-In) |

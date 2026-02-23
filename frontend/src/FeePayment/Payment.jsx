@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useForm } from "react-hook-form"
 import axios from 'axios'
 import { useAuth0 } from '@auth0/auth0-react'
+import { StoreContext } from '../Appcontext/StoreContext'
 
 const Payment = () => {
 
@@ -14,9 +15,7 @@ const Payment = () => {
         formState: { errors, isSubmitting },
     } = useForm()
 
-    //const url = "http://localhost:3000"
-
-    const url = "https://college-website-beckend.onrender.com"
+   const { url } = useContext(StoreContext)
 
     const onSubmit = async (data) => {
 
@@ -28,7 +27,6 @@ const Payment = () => {
         }
 
         const res = await axios.post(`${url}/api/onlinepay`, { info })
-        onlinepay(res.data)
         
         if(isAuthenticated===true){ 
         onlinepay(res.data)}else{

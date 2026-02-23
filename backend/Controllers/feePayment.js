@@ -34,6 +34,7 @@ const razorpay = new Razorpay({
 
 let id;
 
+// Online fee payment
 const onlinePay = async (req, res) => {
 
     const amount = feeTable(req.body.info.className)
@@ -64,7 +65,7 @@ const onlinePay = async (req, res) => {
     }
 }
 
-
+// Verify online payment
 const verifyPayment = async (req, res) => {
 
     const { order_id, payment_id, signature } = req.body
@@ -86,6 +87,7 @@ const verifyPayment = async (req, res) => {
 
 }
 
+// fee Payment recipt
 const payReceipt = async (req, res) => {
 
     const info = await paymentModel.findById(id)

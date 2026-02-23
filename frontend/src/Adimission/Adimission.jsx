@@ -1,7 +1,8 @@
 import { useForm } from "react-hook-form"
-import { useState } from "react"
+import { useContext, useState } from "react"
 import axios from "axios"
 import { useAuth0 } from "@auth0/auth0-react"
+import { StoreContext } from "../Appcontext/StoreContext"
 
 export default function Adimission() {
    const { isAuthenticated } = useAuth0()
@@ -13,8 +14,7 @@ export default function Adimission() {
     formState: { errors, isSubmitting },
   } = useForm()
 
-  // const url = "http://localhost:3000"
-  const url = "https://college-website-beckend.onrender.com"
+  const { url } = useContext(StoreContext)
 
   const [show, setShow] = useState(true)
   const [code, setCode] = useState(0)
