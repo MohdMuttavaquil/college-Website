@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/check', (req,res) =>{
-  res.send("check is completed")
+  res.send("check is completed code update on ec2")
 })
 
 app.listen(PORT, () => {
