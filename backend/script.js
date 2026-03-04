@@ -21,6 +21,9 @@ app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
+app.get('/update', (req, res) =>{
+  res.json("file updated on ec2 server")
+})
 
 app.listen(PORT, () => {
   console.log(`Example app listening on PORT ${PORT}`)
