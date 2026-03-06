@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/update', (req, res) =>{
-  res.send("file updateds ckeck the status on EC2 server")
+  res.send("file updateds ckecks the status on EC2 server")
 })
 
 app.listen(PORT, () => {
