@@ -11,13 +11,19 @@ const PORT = process.env.PORT || 3000
 dbConnectio()
 
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+  origin: "https://college-website-liard.vercel.app/",
+  //origin: "http://localhost:3000/",
+  methods: ['GET, POST']
+}
+))
 
 app.use("/api", ragRoute)
 app.use("/api", payRoute)
 
 
 app.get('/', (req, res) => {
+  console.log("server start")
   res.send('Hello World!')
 })
 

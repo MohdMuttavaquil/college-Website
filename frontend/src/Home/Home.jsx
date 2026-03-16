@@ -8,7 +8,7 @@ import { useAuth0 } from '@auth0/auth0-react'
 
 const Home = () => {
 
-  const [url, seturl] = useState("photos/lovetolearn.avif")
+  const [imageUrl, setImageUrl] = useState("photos/lovetolearn.avif")
 
   useEffect(() => {
     call()
@@ -18,7 +18,7 @@ const Home = () => {
   const chengeimg = async (a) => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        resolve(seturl(a))
+        resolve(setImageUrl(a))
       }, 3000)
     })
   }
@@ -52,7 +52,7 @@ const Home = () => {
           </div>
         </div>}
 
-        <img src={url} className='sm:h-screen w-full h-[65vh]'></img>
+        <img src={imageUrl} className='sm:h-screen w-full h-[65vh]'></img>
       </div>
 
       <div className=' container sm:w-[80%] mx-auto w-[94%]'>
