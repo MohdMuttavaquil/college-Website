@@ -3,10 +3,10 @@ import Navber from "./component/Navber"
 import Footer from "./component/Footer"
 import Adimission from "./Adimission/Adimission"
 import Payment from "./FeePayment/Payment"
-import { Route, Routes, useContext } from "react-router"
+import { Route, Routes } from "react-router"
 import { StoreContext } from "./Appcontext/StoreContext"
 import "./App.css"
-import { useEffect } from "react"
+import { useEffect, useContext } from "react"
 import axios from 'axios'
 
 function App() {
