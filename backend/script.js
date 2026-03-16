@@ -12,8 +12,7 @@ dbConnectio()
 
 app.use(express.json())
 app.use(cors({
-  origin: "https://college-website-liard.vercel.app/",
-  //origin: "http://localhost:3000/",
+  origin: "https://college-website-liard.vercel.app",
   methods: ['GET, POST']
 }
 ))
