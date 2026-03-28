@@ -11,8 +11,10 @@ const PORT = process.env.PORT || 3000
 dbConnectio()
 
 app.use(express.json())
+ 
 app.use(cors({
   origin: "https://college-website-liard.vercel.app",
+  //origin: "http://localhost:5173",
   methods: ['GET, POST']
 }
 ))
@@ -24,10 +26,6 @@ app.use("/api", payRoute)
 app.get('/', (req, res) => {
   console.log("server start")
   res.send('Hello World!')
-})
-
-app.get('/update', (req, res) =>{
-  res.send("file updateds add server test in CI CD pipeline, ckecks the status on EC2 server")
 })
 
 app.listen(PORT, () => {

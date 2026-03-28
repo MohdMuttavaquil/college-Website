@@ -14,7 +14,7 @@ createRoot(document.getElementById('root')).render(
     domain="dev-nfz0zae5uc41gmgq.us.auth0.com"
     clientId="eD4gmbSmvLjAamXtanIA8trUbmK94Ypj"
     authorizationParams={{
-      redirect_uri: "https://college-website-frontend-9yal.onrender.com"
+      redirect_uri: "https://college-website-liard.vercel.app"
     }}
   >
     <App />
