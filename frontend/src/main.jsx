@@ -11,8 +11,8 @@ createRoot(document.getElementById('root')).render(
 <StoreProvider>
 
 <Auth0Provider
-    domain="dev-nfz0zae5uc41gmgq.us.auth0.com"
-    clientId="eD4gmbSmvLjAamXtanIA8trUbmK94Ypj"
+      domain="dev-l16pc0o8v77fr3av.us.auth0.com"
+      clientId="kvv2PB2TRKZoH862Lqa3PKE25OVBSNtP"
     authorizationParams={{
       redirect_uri: "https://college-website-liard.vercel.app"
     }}
