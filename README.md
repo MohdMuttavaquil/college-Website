@@ -1,6 +1,6 @@
 # 🎓 College Website – Modern Web Application
 
-# Live Demo (https://college-website-liard.vercel.app/)
+🚀 **Live Demo** https://college-website-liard.vercel.app/
 
 A fully responsive and dynamic **College Website** that provides complete details about the institution, courses (from **LKG to 12th** in **Arts**, **Science**, and **Commerce**), online admission registration, and secure online fee payment using **Razorpay**.  
 The platform also includes **Google Sign-In authentication** powered by **Auth0** and is hosted on **Render**.
